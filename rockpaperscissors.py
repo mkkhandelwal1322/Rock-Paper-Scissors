@@ -11,9 +11,9 @@ SELECTIONS_LIST_RPS = ['ROCK', 'PAPER', 'SCISSORS']
 
 #  an expansion of classic game - Rock, Paper, Scissors, Lizard, Spock
 #  tuples list of win combinations
-WIN_LIST_RPSLS = [('ROCK', 'SCISSORS'), ('ROCK', 'LIZARD'),  # who can be defeated by ROCK
-                  ('SCISSORS', 'LIZARD'), ('SCISSORS', 'PAPER'),  # who can be defeated by SCISSORS
-                  ('PAPER', 'SPOCK'), ('PAPER', 'ROCK')]  # who can be defeated by PAPER
+WIN_LIST_RPSLS = [('ROCK', 'SCISSORS'),  # who can be defeated by ROCK
+                  ('SCISSORS', 'PAPER'),  # who can be defeated by SCISSORS
+                  ('PAPER', 'ROCK')]  # who can be defeated by PAPER
 
 #  list of selections
 SELECTIONS_LIST_RPSLS = ['ROCK','PAPER','SCISSORS']
@@ -37,13 +37,13 @@ def welcome():
     "\n*******************************************************************************"
     "\n*                                OPTIONS                                      *"
     "\n*******************************************************************************"
-    "\n* [1] - (Classic) Rock Paper Scissors                                         *"
+    "\n* [1] - Rock Paper Scissors                                         *"
     "\n* [2] - Exit                                                                  *"                   
     "\n*******************************************************************************"
-    "\n Please select an option (1, 2, 3 or 4): ")
-    if option == '1':  #  if options 1, 2 or 3 are selected, it will call lets_play function
+    "\n Please select an option (1, or 2): ")
+    if option == '1':  #  if options 1 is selected, it will call lets_play function
       lets_play(option)
-    elif option == '2':  # if option is 4, exits the program
+    elif option == '2':  # if option is 2, exits the program
       print("Bye bye")
       exit()
     else:  #  if there's an invalid option, the menu will start again
